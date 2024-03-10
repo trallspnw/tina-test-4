@@ -1,6 +1,13 @@
+'use client';
+
 import Link from "next/link";
 
 const Home = () => {
+
+  function buttonClick() {
+    alert('clicked!');
+  }
+
   return (
     <div>
       <h1>Home</h1>
@@ -8,6 +15,7 @@ const Home = () => {
       <p>
         Visit the <Link href="/about">About</Link> page.
       </p>
+      <button onClick={buttonClick}>test</button>
     </div>
   );
 };
