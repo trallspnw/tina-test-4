@@ -1,21 +1,23 @@
 {
   "private": true,
   "scripts": {
-    "dev": "next",
-    "build": "next build",
+    "dev": "TINA_PUBLIC_IS_LOCAL=true tinacms dev -c \"next\"",
+    "build": "tinacms build && next build",
     "start": "npm run build && serve out"
   },
   "dependencies": {
-    "@types/node": "^18.11.5",
     "@types/react": "^18.0.23",
     "@types/react-dom": "^18.0.7",
     "next": "latest",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "serve": "^14.2.0",
+    "tinacms": "^1.6.0",
     "typescript": "^4.8.4"
   },
   "devDependencies": {
+    "@tinacms/cli": "^1.5.42",
+    "@types/node": "^20.11.25",
     "sass": "^1.71.1"
   }
 }
