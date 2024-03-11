@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import '/app/ui/global.scss';
+import nextImage from '/public/next.svg';
 
 export default function RootLayout({
   children,
@@ -12,9 +13,7 @@ export default function RootLayout({
         {children}
         <h3>Test Image</h3>
         <Image
-          src='/next.svg'
-          width='200'
-          height='100'
+          src={nextImage}
           alt='some test image'
         />
         </body>
